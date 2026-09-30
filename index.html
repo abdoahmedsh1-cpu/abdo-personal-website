@@ -1,3 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abdo - Personal Website</title>
+
+    <style>
+
+        /* General Page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #333;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            max-width: 700px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Title */
+        h1 {
+            color: #2c3e50;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+
+        /* Paragraphs */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* My Image */
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            margin: 20px 0;
+        }
+
+        /* Facebook Button */
+        a {
+            display: inline-block;
+            background-color: #1877f2;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        /* When Mouse Goes Over Button */
+        a:hover {
+            background-color: #0d5ec7;
+            transform: scale(1.05);
+        }
+
+        /* Small Footer */
+        .footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Hello, I'm Abdo</h1>
+
+        <p>
+            Welcome to my personal website.
+        </p>
+
+
+        <h2>About Me</h2>
+
+        <p>
+            My name is Abdo.
+        </p>
+
+        <p>
+            I am 20 years old.
+        </p>
+
+        <p>
+            I study in ERU.
+        </p>
+
+
+        <h2>My Picture</h2>
+
+        <img src="my img.jpeg" alt="Abdo's picture">
+
+
+        <h2>My social media</h2>
+
+        <a href="https://www.facebook.com/abdo.ahmed.422090/" target="_blank">
+            Visit My Facebook
+        </a>
+
+        <a href="https://www.instagram.com/abdo_a_h_m_e_d_2?stkn=MWFjcmtlcGdkdmxybw%3D%3D&utm_source=qr" target="_blank">
+            Visit My instgram
+        </a>
+
+        <a href="https://wa.Me/01036261260" target="_blank">
+            Visit My watsapp
+        </a>
+
+
+        <div class="footer">
+            <p>© 2026 Abdo. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,10 +246,7 @@
             background-color: #e1306c;
         }
 
-        a.whatsapp {
-            background-color: #25d366;
-        }
-
+      
         a:hover {
             transform: scale(1.05);
             opacity: 0.85;
@@ -146,6 +291,45 @@
             }
 
         }
+         .contact-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.contact-item.phone {
+    background-color: #34495e;
+}
+
+.contact-item.whatsapp {
+    background-color: #25d366;
+}
+
+.contact-item.email {
+    background-color: #3498db;
+}
+        
+       
 
     </style>
 
@@ -225,13 +409,33 @@
         </a>
 
 
-        <a class="whatsapp"
-           href="https://wa.me/01036261260"
-           target="_blank">
+       
 
-            WhatsApp
 
-        </a>
+        <h2>Contact Me</h2>
+
+<div class="contact-box">
+
+    <a class="contact-item phone"
+       href="tel:+201036261260">
+        📞
+        <span>Call Me</span>
+    </a>
+
+    <a class="contact-item whatsapp"
+       href="https://wa.me/201036261260"
+       target="_blank">
+        💬
+        <span>WhatsApp</span>
+    </a>
+
+    <a class="contact-item email"
+       href="abdoahmedsh1@gmail.com">
+        📧
+        <span>Email Me</span>
+    </a>
+
+</div>
 
 
         <!-- Footer -->
